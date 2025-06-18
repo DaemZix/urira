@@ -50,11 +50,11 @@
     </div>
 
     <div class="rocket">
-        <button class="button3" id="getSignalButton">Get Signal</button>
-        <button class="button2" onclick="location.href='https://hahgitcla.github.io/t'">Back to menu</button>
+        <button class="button3" id="getSignalButton">Сигнал (92%)</button>
+        <button class="button2" onclick="location.href='https://hahgitcla.github.io/t'">Назад</button>
         <div class="loader2">
             <p>
-                <div id="responseText" class="text">Waiting...</div>
+                <div id="responseText" class="text">Загрузка...</div>
             </p>
         </div>
         <div class="visible">
@@ -64,7 +64,7 @@
         
         <script>
             function getRandomSignal() {
-                return (Math.random() * (1.7 - 1.3) + 1.3).toFixed(2);
+                return (Math.random() * (2.7 - 1.3) + 1.3).toFixed(2);
             }
 
             function animateDots(element, duration) {
@@ -72,7 +72,7 @@
                 let count = 0;
                 const interval = setInterval(() => {
                     dots = ".".repeat(count % 4);
-                    element.textContent = "Waiting" + dots;
+                    element.textContent = "....." + dots;
                     count++;
                 }, 500);
                 setTimeout(() => {
