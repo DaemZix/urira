@@ -274,10 +274,10 @@ document.addEventListener('DOMContentLoaded', () => {
     quickLog("Module Initialization...", "info");
     await new Promise(resolve => setTimeout(resolve, 300));
 
-    await attemptConnection("BGAMING API");
+    await attemptConnection("1Win API");
     await new Promise(resolve => setTimeout(resolve, 100)); 
 
-    await attemptConnection("ai servers GambingGPT");
+    await attemptConnection("ai servers 1WinGPT");
     await new Promise(resolve => setTimeout(resolve, 100));
 
     await attemptConnection("AVIAMASTER Gateway");
